@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -17,7 +17,7 @@
       <!-- <div class="menuToggle" onclick="toggleMenu();"></div> -->
       <ul class="navigation">
         <li><a href="#mywork" onclick="toggleMenu();">My Work</a></li>
-        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#about" onclick="toggleMenu();">Meet the Artist</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
     </header>
@@ -25,49 +25,49 @@
     <!-- BANNER SECTION -->
     <section class="banner" id="banner">
       <div class="content">
-        <a href="" class="btn">Contact</a>
+        <a href="#contact" class="btn">Contact</a>
       </div>
     </section>
 
     <!-- MY WORK SECTION -->
     <section class="mywork" id="mywork">
       <div class="row">
-        <div class="col40">
+        <div class="titleColumnLeft">
           <h2 class="titleText">My Work</h2>
         </div>
-        <div class="col60">
-          <div class="content">
-            <div class="box">
-              <div class="imgBx">
+        <div class="content">
+          <a href="">
+            <div class="card">
+              <div class="imgBox">
                 <img src="./images/thumbBranding.png" alt="">
               </div>
               <div class="text">
                 <h3>Brand Identity</h3>
               </div>
             </div>
-            <div class="box">
-              <div class="imgBx">
-                <img src="./images/thumbDesignAndPrint.png" alt="">
-              </div>
-              <div class="text">
-                <h3>Design and Print</h3>
-              </div>
+          </a>
+          <div class="card">
+            <div class="imgBox">
+              <img src="./images/thumbDesignAndPrint.png" alt="">
             </div>
-            <div class="box">
-              <div class="imgBx">
-                <img src="./images/thumbLargeFormat.png" alt="">
-              </div>
-              <div class="text">
-                <h3>Large Print</h3>
-              </div>
+            <div class="text">
+              <h3>Design and Print</h3>
             </div>
-            <div class="box">
-              <div class="imgBx">
-                <img src="./images/thumbSocialMedia.png" alt="">
-              </div>
-              <div class="text">
-                <h3>Digital Media</h3>
-              </div>
+          </div>
+          <div class="card">
+            <div class="imgBox">
+              <img src="./images/thumbLargeFormat.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Large Format</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="imgBox">
+              <img src="./images/thumbDigitalMedia.png" alt="">
+            </div>
+            <div class="text">
+              <h3>Digital Media</h3>
             </div>
           </div>
         </div>
@@ -75,23 +75,58 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section>
-      <div>
-
+    <section class="about" id="about">
+      <div class="row">
+        <div class="content">
+          <div class="contentRow">
+            <div class="imgTitle">
+              <img src="./images/aboutName-2.png" alt="Hello My Name is Scotty Lee">
+            </div>
+          </div>
+          <div class="contentRow">
+            <div class="imgBox">
+              <img src="./images/aboutProfile.png" alt="Profile Picture">
+            </div>
+            <div class="text">
+              <p>Hipster wannabe 3+ years. Professional graphic artist 10+ years. Born and raised in the dynamic city of Calgary, graphic designing has given me an avenue for my creativity. Over the years I have developed the passion and the appreciation for the digital arts. I have fun creating exciting and new innovative designs whilst seeing what's trending in the world today. I'm a skillful craftsman but always eager to learn and generally an all around good guy.</p>
+              <br>
+              <p>From working with local to international businesses, I'd be more than happy to assist you in your graphic needs!</p>
+              <br>
+              <img src="./images/aboutIconList.png" alt="List of Software Competencies">
+            </div>
+          </div>
+        </div>
+        <div class="titleColumnRight">
+          <h2 class="titleText">Meet the Artist</h2>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section>
-      <div>
-
+    <section class="contact" id="contact">
+      <div class="row">
+        <div class="titleColumnLeft">
+          <h2 class="titleText">Contact</h2>
+        </div>
+        <div class="content">
+          <div class="text">
+            <p><span>Email: </span> <a href="mailto:offsetdesignyyc@gmail.com">offsetdesignyyc@gmail.com</a></p>
+            <p><span>Phone: </span> 403.680.4382</p>
+            <p><span>LinkedIn: </span> <a href="https://www.linkedin.com/in/leescotty">www.linkedin.com/in/leescotty</a></p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      <div>
-
-      </div>
+    <footer class="footer">
+      <a href="" class="logo"><img src="./images/logoOffsetDesign.png" alt=""></a>
+      <!-- <div class="menuToggle" onclick="toggleMenu();"></div> -->
+      <ul class="index">
+        <li><a href="#mywork" onclick="toggleMenu();">My Work</a></li>
+        <li><a href="#about" onclick="toggleMenu();">Meet the Artist</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+      <p class="createdBy">Website created by <span>jedwebdev</span></p>
     </footer>
 
     <script src="" async defer></script>

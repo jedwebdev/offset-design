@@ -12,7 +12,7 @@
 
 /* SECTIONS (GENERAL) */
 section {
-  padding: 100px;
+  padding: 60px;
 }
 .btn {
   font-size: 1em;
@@ -54,22 +54,21 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.row .col40 {
-  width: 48%;
+.row .titleColumnLeft {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-/* .row .col60 .imgBx {
-  position: relative;
-  width: 100%;
-  min-height: 300px;
+.row .titleColumnRight {
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.row .col60 .imgBx img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
+.row .titleColumnRight .titleText {
+  color: #ffccbb;
+}
 
 /* HEADER NAVIGATION */
 header {
@@ -77,6 +76,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100px;
   padding: 20px 50px;
   z-index: 100;
   display: flex;
@@ -94,7 +94,7 @@ header {
   color: #111;
 } */
 header .navigation {
-  position: relative;
+  /* position: relative; */
   display: flex;
 }
 header .navigation li {
@@ -107,7 +107,7 @@ header .navigation li a {
   font-weight: 300;
   font-size: 20px;
 }
-/* header.sticky .navigation li a {
+/* header nav.sticky .navigation li a {
   color: #111;
 } */
 header .navigation li a:hover {
@@ -139,38 +139,146 @@ header .navigation li a:hover {
   font-size: 1em;
   color: #fff;
 }
+.banner .btn {
+  position: absolute;
+  bottom: 40%;
+  transform: translateX(-50%);
+}
 
 /* MY WORK SECTION */
+.mywork {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .mywork .content {
+  margin: 30px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: reverse;
   flex-wrap: wrap;
-  /* margin-top: 40px; */
 }
-.mywork .content .box {
-  width: 240px;
-  margin: 20px;
-  border: 15px solid #fff;
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
-}
-.mywork .content .box .imgBx {
+.mywork .content .card {
   position: relative;
-  width: 100%;
-  height: 230px;
+  margin: 25px;
+  width: 400px;
+  /* background: chartreuse; */
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
 }
-.mywork .content .box .imgBx img {
+.mywork .content .card .imgBox {
+  /* border: 1px solid brown; */
+  width: 250px;
+  overflow: hidden;
+}
+.mywork .content .card .imgBox img {
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  transform: translateX(-10%);
+}
+.mywork .content .text {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+}
+.mywork .content .text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: #000;
+}
+.mywork .content .text h3 a {
+  text-decoration: none;
+}
+
+/* ABOUT SECTION */
+.about {
+  background: #e65423;
+}
+
+.about .content {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .content .contentRow {
+  display: flex;
+}
+.about .content .contentRow .imgBox {
+  margin: 10px;
+}
+.about .content .contentRow .text {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about .content p {
+  color: #ffccbb;
+}
+
+/* CONTACT SECTION */
+.contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contact .content {
+  position: relative;
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+}
+.contact .content .text p {
+  margin: 40px 0px;
+  margin-left: 180px;
+}
+.contact .content .text span {
+  color: #e65423;
+}
+.contact .content .text a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 120px;
+  padding: 20px 50px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  background-color: #e65423;
 }
-.mywork .content .box .text {
-  /* padding: 15px 0 5px; */
+footer .index {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.mywork .content .box .text h3 {
-  font-weight: 400;
-  color: #111;
+footer .index li {
+  list-style: none;
+  margin: 50px;
+}
+footer .index li a {
+  text-decoration: none;
+  color: #ffccbb;
+  font-weight: 300;
+  font-size: 20px;
+}
+footer .index li a:hover {
+  color: #000;
+}
+footer span {
+  color: #e6e6e6;
 }
