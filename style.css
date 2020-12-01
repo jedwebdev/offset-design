@@ -215,9 +215,13 @@ header .navigation li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 .about .content p {
   color: #ffccbb;
+}
+.about .content img {
+  object-fit: contain;
 }
 
 /* CONTACT SECTION */
@@ -246,7 +250,20 @@ header .navigation li a:hover {
   color: #000;
   text-decoration: none;
 }
+.fa-envelope {
+  color: #e65423;
+  margin-right: 10px;
+}
+.fa-phone {
+  color: #e65423;
+  margin-right: 10px;
+}
+.fa-linkedin-in {
+  color: #e65423;
+  margin-right: 10px;
+}
 
+/* FOOTER SECTION */
 footer {
   position: relative;
   bottom: 0;
