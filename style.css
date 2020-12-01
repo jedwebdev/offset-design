@@ -12,7 +12,7 @@
 
 /* SECTIONS (GENERAL) */
 section {
-  padding: 60px;
+  padding: 30px;
 }
 .btn {
   font-size: 1em;
@@ -194,6 +194,7 @@ header .navigation li a:hover {
 
 /* ABOUT SECTION */
 .about {
+  width: 100%;
   background: #e65423;
 }
 
@@ -206,9 +207,11 @@ header .navigation li a:hover {
 }
 .about .content .contentRow {
   display: flex;
+  width: auto;
 }
 .about .content .contentRow .imgBox {
   margin: 10px;
+  object-fit: contain;
 }
 .about .content .contentRow .text {
   margin: 10px;
@@ -217,10 +220,14 @@ header .navigation li a:hover {
   justify-content: center;
   align-items: flex-start;
 }
+.about .content .contentRow .text p {
+  margin: 16px 0;
+}
 .about .content p {
   color: #ffccbb;
 }
 .about .content img {
+  width: auto;
   object-fit: contain;
 }
 
@@ -298,4 +305,7 @@ footer .index li a:hover {
 }
 footer span {
   color: #e6e6e6;
+}
+
+@media screen and (max-width: 1300px) {
 }
