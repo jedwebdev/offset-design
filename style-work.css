@@ -32,17 +32,16 @@ section {
 .btn:hover {
   letter-spacing: 6px;
 }
-/* .title {
+.title {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-} */
+}
 .titleText {
   font-size: 7rem;
-  /* font-weight: 300; */
   font-family: "Bebas Neue", cursive;
   color: var(--primary-color);
 }
@@ -58,29 +57,26 @@ p {
 }
 .row .content {
   max-width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.row .titleColumnLeft {
-  width: 600px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  display: grid;
 }
 .row .titleColumnRight {
+  position: relative;
   width: 600px;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  background: rosybrown;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
 }
 .row .titleColumnRight .titleText {
-  color: var(--secondary-color);
+  position: absolute;
+  top: 0;
+  color: var(--primary-color);
+  /* transform: rotate(90deg); */
 }
 
 /* HEADER NAVIGATION */
 header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -92,17 +88,9 @@ header {
   align-items: center;
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.04);
 }
-/* header.sticky {
-  background: #fff;
-  padding: 10px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-} */
-/* header.sticky .logo {
-  color: #111;
-} */
 header .navigation {
-  /* position: relative; */
   display: flex;
 }
 header .navigation li {
@@ -114,46 +102,12 @@ header .navigation li a {
   color: #000;
   font-size: 26px;
 }
-/* header nav.sticky .navigation li a {
-  color: #111;
-} */
 header .navigation li a:hover {
   color: var(--primary-color);
 }
 
-/* BANNER SECTION */
-.banner {
-  position: relative;
-  top: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(./images/coverOffsetDesign1.png);
-  background-size: cover;
-  background-position: center;
-}
-.banner .content {
-  max-width: 900px;
-  text-align: center;
-}
-.banner .content h2 {
-  font-size: 5em;
-  color: #fff;
-}
-.banner .content p {
-  font-size: 1em;
-  color: #fff;
-}
-.banner .btn {
-  position: absolute;
-  bottom: 40%;
-  transform: translateX(-50%);
-}
-
 /* MY WORK SECTION */
-section#mywork {
+section#brand-identity {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -197,85 +151,6 @@ section#mywork {
 }
 .mywork .content .text h3 a {
   text-decoration: none;
-}
-
-/* ABOUT SECTION */
-section#about {
-  width: 100%;
-  background: var(--primary-color);
-  display: flex;
-}
-.about .content {
-  margin: 30px;
-  /* width: auto; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.about .content .contentRow {
-  display: flex;
-  width: auto;
-}
-.about .content .contentRow .imgBox {
-  margin: 10px;
-  object-fit: contain;
-  width: auto;
-}
-.about .content .contentRow .text {
-  width: auto;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.about .content .contentRow .text p {
-  margin: 16px 0;
-  font-size: 1.2rem;
-}
-.about .content p {
-  color: var(--secondary-color);
-}
-.about .content img {
-  width: auto;
-  object-fit: contain;
-}
-
-/* CONTACT SECTION */
-section#contact {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.contact .content {
-  position: relative;
-  margin: 30px;
-  width: 100%;
-  font-size: 24px;
-}
-.contact .content .text p {
-  margin: 40px 0px;
-  /* margin-left: 180px; */
-}
-.contact .content .text span {
-  color: var(--primary-color);
-}
-.contact .content .text a {
-  color: #000;
-  text-decoration: none;
-}
-.fa-envelope {
-  color: var(--primary-color);
-  margin-right: 10px;
-}
-.fa-phone {
-  color: var(--primary-color);
-  margin-right: 10px;
-}
-.fa-linkedin-in {
-  color: var(--primary-color);
-  margin-right: 10px;
 }
 
 /* FOOTER SECTION */
