@@ -323,6 +323,9 @@ footer .index li a {
 footer .index li a:hover {
   color: #000;
 }
+footer p {
+  text-align: right;
+}
 footer span {
   color: #e6e6e6;
 }
