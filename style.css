@@ -32,18 +32,12 @@ section {
 .btn:hover {
   letter-spacing: 6px;
 }
-/* .title {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-} */
-.titleText {
+.title-text {
   font-size: 7rem;
   /* font-weight: 300; */
-  font-family: "Bebas Neue", cursive;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -3px;
   color: var(--primary-color);
 }
 p {
@@ -62,19 +56,19 @@ p {
   justify-content: center;
   align-items: center;
 }
-.row .titleColumnLeft {
+.row .title-column-left {
   width: 600px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.row .titleColumnRight {
+.row .title-column-right {
   width: 600px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.row .titleColumnRight .titleText {
+.row .title-column-right .title-text {
   color: var(--secondary-color);
 }
 
@@ -93,14 +87,6 @@ header {
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0);
 }
-/* header.sticky {
-  background: #fff;
-  padding: 10px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-} */
-/* header.sticky .logo {
-  color: #111;
-} */
 header .navigation {
   /* position: relative; */
   display: flex;
@@ -114,42 +100,61 @@ header .navigation li a {
   color: #000;
   font-size: 26px;
 }
-/* header nav.sticky .navigation li a {
-  color: #111;
-} */
 header .navigation li a:hover {
   color: var(--primary-color);
 }
 
 /* BANNER SECTION */
-.banner {
-  position: relative;
+section#slideshow {
+  padding: 0;
   top: 0;
+  left: 0;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow .btn {
+  position: absolute;
   justify-content: center;
   align-items: center;
-  background: url(./images/coverOffsetDesign1.png);
-  background-size: cover;
-  background-position: center;
-}
-.banner .content {
-  max-width: 900px;
-  text-align: center;
-}
-.banner .content h2 {
-  font-size: 5em;
-  color: #fff;
-}
-.banner .content p {
-  font-size: 1em;
-  color: #fff;
-}
-.banner .btn {
-  position: absolute;
-  bottom: 40%;
+  left: 50%;
   transform: translateX(-50%);
+  bottom: 40%;
+  z-index: 10;
+}
+.slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 26s infinite;
+}
+.slideshow-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* animation: zoom 21s infinite; */
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img {
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img {
+  animation-delay: 5s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img {
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img {
+  animation-delay: 15s;
+}
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img {
+  animation-delay: 20s;
 }
 
 /* MY WORK SECTION */
@@ -170,7 +175,7 @@ section#mywork {
   margin: 25px;
   width: 400px;
   /* background: chartreuse; */
-  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.04);
+  /* box-shadow: 0 5px 35px rgba(0, 0, 0, 0.04); */
   cursor: pointer;
 }
 .mywork .content .card .imgBox {
@@ -192,8 +197,8 @@ section#mywork {
 }
 .mywork .content .text h3 {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  color: #000;
+  font-size: 30px;
+  color: var(--primary-color);
 }
 .mywork .content .text h3 a {
   text-decoration: none;
@@ -294,6 +299,9 @@ footer {
   background-color: var(--primary-color);
   font-size: 16px;
 }
+footer img {
+  width: 200px;
+}
 footer .index {
   position: absolute;
   display: flex;
@@ -319,6 +327,16 @@ footer span {
   color: #e6e6e6;
 }
 
+/* SLIDESHOW ANIMATION */
+@keyframes cycleImages {
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 1450px) {
   /* HEADER NAVIGATION (<1450px) */
   header {
@@ -338,7 +356,7 @@ footer span {
     flex-direction: column;
     align-items: center;
   }
-  .mywork .row .titleColumnLeft {
+  .mywork .row .title-column-left {
     width: auto;
     display: flex;
     justify-content: center;
@@ -351,7 +369,7 @@ footer span {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .about .row .titleColumnRight {
+  .about .row .title-column-right {
     width: auto;
     display: flex;
     justify-content: center;
@@ -367,7 +385,7 @@ footer span {
     flex-direction: column;
     align-items: center;
   }
-  .contact .row .titleColumnLeft {
+  .contact .row .title-column-left {
     width: auto;
     display: flex;
     justify-content: center;

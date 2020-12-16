@@ -1,0 +1,123 @@
+[33mcommit bfd84a56b480027cc3955bd3073447cc90d3619e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31mstaging/main[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Tue Dec 8 19:25:58 2020 -0700
+
+    worked on portfolio section
+
+[33mcommit b2cc900478b8e00b8ea9fc8531d1ad81c435169f[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Thu Dec 3 19:01:02 2020 -0700
+
+    cleaned css and started on project page
+
+[33mcommit 20d306a20edd76c67d345cfcaba40e9ee85fb58f[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Tue Dec 1 15:49:45 2020 -0700
+
+    updated code for tablets (<1450px)
+
+[33mcommit b790b21097951776d020296f31c7142009d856bd[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Mon Nov 30 19:08:53 2020 -0700
+
+    final add for nov30
+
+[33mcommit 8da238b6f7ce7ecaa1edc6a1b85e47cbd042aed7[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Mon Nov 30 18:39:50 2020 -0700
+
+    refined layout and added contact icons
+
+[33mcommit 65ce2107fee03b93e985d270254979add16650cf[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Mon Nov 30 14:25:27 2020 -0700
+
+    updated navbar
+
+[33mcommit c12569a9b4b4d8321d992e6621d1166f9f193899[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Mon Nov 30 13:37:48 2020 -0700
+
+    second major update
+
+[33mcommit f74d2f35e976c42637e86d1e9c86b1e4a3917d63[m[33m ([m[1;32mbuild[m[33m)[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Fri Nov 27 13:01:12 2020 -0700
+
+    started build
+
+[33mcommit 7b5ee6d764db6f33f3fdbd1d9153500b72bcd9c8[m[33m ([m[1;31morigin/upload[m[33m)[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Wed Nov 25 18:55:18 2020 -0700
+
+    rearranged img files
+
+[33mcommit 337f6a2a48e0a3743c115fbbc20e7e39649f7928[m
+Merge: 0bb8022 0ae84f5
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Wed Nov 25 18:08:37 2020 -0700
+
+    Merge pull request #3 from jed208/upload
+    
+    upload mockups
+
+[33mcommit 0ae84f5646028890a4713ebb7f11ce0405b0e94b[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Wed Nov 25 18:06:22 2020 -0700
+
+    upload mockups
+
+[33mcommit 0bb8022d7ca822a09944650337d17e1d32320e3b[m
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 20:13:32 2020 -0700
+
+    Create README.md
+
+[33mcommit 331d11f9b52ef72f7cce18ebc7de1ab629639580[m
+Merge: b947b59 151c20c
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 19:28:27 2020 -0700
+
+    Merge pull request #2 from jed208/newFeature
+    
+    updated from gitbash
+
+[33mcommit 151c20c1427bc911857ebb707efee873951a71ca[m
+Merge: b983635 b947b59
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 19:28:07 2020 -0700
+
+    Merge branch 'main' into newFeature
+
+[33mcommit b9836354f8274d6db43143fda98bcf357dca24d8[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Tue Nov 24 19:21:38 2020 -0700
+
+    updated from gitbash
+
+[33mcommit b947b59dfc34c7e24ab55da5d5f3ffbf703b7772[m
+Merge: fbfe112 32921c5
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 19:13:08 2020 -0700
+
+    Merge pull request #1 from jed208/test
+    
+    Update index.html
+
+[33mcommit 32921c5c549008da95b490f30695583919abcf56[m[33m ([m[1;31morigin/test[m[33m)[m
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 19:11:48 2020 -0700
+
+    Update index.html
+
+[33mcommit fbfe112d28f954fc71c9b901fe01d7221a6053c0[m
+Author: jed208 <jed208@protonamil.com>
+Date:   Tue Nov 24 19:10:18 2020 -0700
+
+    added boiler plate to html
+
+[33mcommit e32cfabb309ad80ea4a074b7abf1ba83838e0db0[m
+Author: jed208 <71679893+jed208@users.noreply.github.com>
+Date:   Tue Nov 24 19:00:36 2020 -0700
+
+    Create index.html
