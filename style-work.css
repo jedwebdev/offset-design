@@ -180,52 +180,10 @@ footer span {
     padding: 15px 30px;
   }
   header .navigation li {
-    margin-left: 85px;
+    margin-left: 40px;
   }
   header .navigation li a {
-    font-size: 24px;
-  }
-
-  /* MY WORK SECTION (<1450px) */
-  .mywork .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mywork .row .titleColumnLeft {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* ABOUT SECTION (<1450px) */
-  .about .row {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .about .row .titleColumnRight {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .about .content .contentRow .text {
-    margin: 10px;
-  }
-
-  /* CONTACT SECTION (<1450px) */
-  .contact .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact .row .titleColumnLeft {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 22px;
   }
 
   /* FOOTER SECTION (<1450px) */
@@ -245,5 +203,97 @@ footer span {
   footer p {
     text-align: right;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* HEADER NAVIGATION (<999px) */
+  .slideshow .btn {
+    font-size: 18px;
+    padding: 8px 22px;
+  }
+  header {
+    height: 80px;
+    padding: 15px 30px;
+  }
+  header .logo img {
+    width: 85%;
+  }
+  header .navigation {
+    display: none;
+  }
+  header .navigation.active {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+  }
+  header .navigation li {
+    margin: 24px 0px;
+  }
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(./images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+    z-index: 10;
+  }
+  .menuToggle.active {
+    background: url(./images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .title-text {
+    font-size: 5rem;
+  }
+  .row .content {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* PORTFOLIO SECTIONS */
+  .content {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    /* grid-template-columns: repeat(3, minmax(300px, 500px)); */
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    /* grid-auto-flow: dense; */
+  }
+
+  /* FOOTER SECTION (<999px) */
+  footer {
+    padding: 15px 30px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer img {
+    width: 140px;
+  }
+  footer .index li {
+    display: none;
+  }
+  footer p {
+    text-align: center;
+    font-size: 12px;
   }
 }

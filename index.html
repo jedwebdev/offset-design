@@ -14,14 +14,20 @@
   </head>
   <body>
     <!-- NAVIGATION/HEADER SECTION -->
-    <header>
+    <header id="top">
       <a href="" class="logo"><img src="./images/logoOffsetDesign.png" alt=""></a>
-      <!-- <div class="menuToggle" onclick="toggleMenu();"></div> -->
+      <div class="menuToggle" onclick="toggleMenu();"></div>
       <ul class="navigation">
         <li><a href="#mywork" onclick="toggleMenu();">My Work</a></li>
         <li><a href="#about" onclick="toggleMenu();">Meet the Artist</a></li>
         <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </ul>
+      <!-- Menu Bars -->
+      <div class="menu-bars" id="menu-bars">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
     </header>
 
     <!-- BANNER SECTION -->
@@ -138,7 +144,7 @@
     </section>
 
     <footer class="footer">
-      <a href="" class="logo"><img src="./images/logoOffsetDesign-invert.png" alt=""></a>
+      <a href="#top" class="logo"><img src="./images/logoOffsetDesign-invert.png" alt=""></a>
       <!-- <div class="menuToggle" onclick="toggleMenu();"></div> -->
       <ul class="index">
         <li><a href="#mywork" onclick="toggleMenu();">My Work</a></li>
@@ -151,6 +157,6 @@
       </p>
     </footer>
 
-    <script src="" async defer></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
