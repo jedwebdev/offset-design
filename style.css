@@ -501,6 +501,9 @@ footer span {
   }
 
   /* ABOUT SECTION (<999px) */
+  .about .row .title-column-right {
+    text-align: center;
+  }
   .about .content {
     margin: 0;
   }
