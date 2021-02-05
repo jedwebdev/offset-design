@@ -93,6 +93,11 @@ header {
   transition: 0.5s;
   background-color: rgba(255, 255, 255, 0);
 }
+header.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
 header .navigation {
   /* position: relative; */
   display: flex;

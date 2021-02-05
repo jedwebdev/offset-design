@@ -84,7 +84,7 @@ section {
 }
 .gallery-item {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   position: relative;
   /* border: 1px solid chartreuse;
   background-color: chocolate; */
@@ -98,7 +98,6 @@ section {
   height: 100%;
   object-fit: contain;
   /* object-position: 50% 50%; */
-  cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 .gallery-item:hover img {
